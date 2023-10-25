@@ -14,8 +14,7 @@ public class LaunchProjectileFinished : MonoBehaviour
             GameObject ball = Instantiate(projectile,
             transform.position, transform.rotation);
 
-            ball.GetComponent<Rigidbody>().AddRelativeForce(new
-            Vector3(0, launchVelocity,0));
+            ball.GetComponent<Rigidbody>().AddRelativeForce(new Vector3(0, launchVelocity, 0));
         }
     }
 }
